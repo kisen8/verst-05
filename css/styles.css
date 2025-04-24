@@ -127,7 +127,18 @@ img {
 
 /* hero */
 .hero {
-  background-color: var(--darkfone-color);
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #212121;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/hero.jpg");
 }
 .hero-title {
   font-family: roboto;
@@ -157,6 +168,10 @@ img {
   padding: 10px 32px 10px 32px;
   margin: auto;
   border-radius: 6px;
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  cursor: pointer;
 }
 
 .hero-main {
@@ -320,6 +335,55 @@ img {
   color: var(--white-color);
 }
 
+/* ----PART */
+.partmain {
+  display: flex;
+}
+.part2 {
+  width: 206px;
+  margin-left: 70px;
+  margin-top: 12px;
+}
+.part-title {
+  color: var(--white-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.part-list {
+  display: flex;
+  margin-top: 20px;
+}
+.part-item:not(:first-child) {
+  margin-left: 10px;
+}
+.icon-soc {
+  margin: auto;
+  width: 20px;
+  height: 20px;
+
+  fill: var(--white-color);
+}
+
+.part-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+  background-color: var(--text-color);
+  fill: currentColor;
+}
+.part-link:hover {
+  background-color: var(--accent-color);
+}
+/* .part-link:hover .icon-soc {
+  fill: green;
+} */
+
 /* ---------------------------------------------------- */
 /* PORTFOLIO */
 
@@ -404,3 +468,5 @@ img {
   line-height: 1.88;
   letter-spacing: 0.03em;
 }
+
+/* ----- */
