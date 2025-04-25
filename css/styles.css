@@ -295,6 +295,87 @@ img {
   background-color: var(--white-color);
   border-radius: 0 0 15px 15px;
 }
+/* ------------socbox---------------------------------------- */
+.socbox {
+  width: 206px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.socbox-list {
+  display: flex;
+  margin-top: 20px;
+}
+.socbox-item:not(:first-child) {
+  margin-left: 10px;
+}
+.icon-socbox {
+  margin: auto;
+  width: 20px;
+  height: 20px;
+
+  fill: var(--text-color);
+}
+
+.socbox-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+  background: none;
+}
+.socbox-link:hover {
+  background-color: var(--accent-color);
+}
+.socbox-link:hover .icon-socbox {
+  fill: var(--white-color);
+}
+
+/* =======================Постійні клієнти======================== */
+
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.clients-list {
+  display: flex;
+  justify-content: center;
+}
+.clients-item {
+  display: block;
+}
+.clients-item:not(:first-child) {
+  margin-left: 30px;
+}
+.clients-link {
+  display: inline-flex;
+  width: 170px;
+  height: 92px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  border: solid var(--mainfone-color);
+}
+.clients-link:hover {
+  border-color: var(--accent-color);
+}
+.clients-link:hover .clients-icon {
+  fill: var(--accent-color);
+}
+
+.clients-icon {
+  display: inline-flex;
+  width: 106px;
+  height: 60px;
+  margin: auto;
+
+  fill: var(--text-color);
+}
 
 /* footer */
 .footer-web {
@@ -380,9 +461,6 @@ img {
 .part-link:hover {
   background-color: var(--accent-color);
 }
-/* .part-link:hover .icon-soc {
-  fill: green;
-} */
 
 /* ---------------------------------------------------- */
 /* PORTFOLIO */
